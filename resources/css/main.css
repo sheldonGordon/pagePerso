@@ -5,3 +5,27 @@ body {
 .card {
   background-color: #484848;
 }
+
+.langage {
+  background-color: #4a6670;
+}
+
+.langage-dark {
+  background-color: #203c45;
+}
+
+.bdd {
+  background-color: #a9c5a0;
+}
+
+.bdd-dark {
+  background-color: #7a9471;
+}
+
+.framework {
+  background-color: #f5d5ed;
+}
+
+.framework-dark {
+  background-color: #c2a4bb;
+}
