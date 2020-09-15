@@ -1,5 +1,12 @@
+@font-face {
+  font-family: "Lemon Milk";
+  src: url("../fonts/LEMONMILK-Regular.otf") format("opentype");
+}
+
 body {
   background-color: #212121;
+  font-family: "Lemon Milk", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
 }
 
 .card {
@@ -42,4 +49,18 @@ body {
   transform: translateY(-50%);
   left: 10%;
   width: 80%;
+}
+
+.description {
+  letter-spacing: 0.2rem;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.zone {
+  height: 90vh;
+}
+
+img {
+  min-height: auto !important;
 }
