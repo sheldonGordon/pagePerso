@@ -61,6 +61,65 @@ body {
   height: 90vh;
 }
 
-img {
+.avatar > img {
   min-height: auto !important;
+}
+
+/* 
+  Avatar personnalisé
+*/
+.avatarPerso {
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  margin: auto;
+}
+
+.avatarPerso img {
+  border-radius: 9999px;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: hsl(3, 18%, 51%);
+  }
+  25% {
+    border-color: hsl(315, 62%, 90%);
+  }
+  50% {
+    border-color: hsl(105, 24%, 70%);
+  }
+  75% {
+    border-color: hsl(196, 20%, 36%);
+  }
+  100% {
+    border-color: hsl(0, 0%, 13%);
+  }
+  to {
+    opacity: 0;
+    transform: scale(10);
+  }
+}
+
+.avatarPerso::before,
+.avatarPerso::after {
+  animation: pulse 4s linear infinite;
+  border: #757575 solid 8px;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  content: " ";
+  height: 140%;
+  left: -20%;
+  opacity: 0.6;
+  position: absolute;
+  top: -20%;
+  transform: scale(0.714);
+  width: 140%;
+  z-index: 1;
+}
+
+.avatarPerso::after {
+  animation-delay: 1s;
 }
