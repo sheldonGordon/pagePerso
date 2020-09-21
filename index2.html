@@ -22,46 +22,38 @@
       rel="stylesheet"
       href="https://cdn.metroui.org.ua/v4/css/metro-rtl.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="resources/css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css"
     />
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="fg-white">
     <div>
-      <div id="pres" class="container mt-20">
+      <div id="pres" class="container">
         <div class="d-flex flex-row flex-justify-around text-center moi row">
-          <ul
-            class="user-list"
-            data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="2000"
-            style="list-style: none"
-          >
+          <ul class="user-list" style="list-style: none">
             <li>
               <div class="avatarPerso">
                 <img src="./resources/img/0.jpg" />
               </div>
-              <div class="display2">Chatelain</div>
-              <div class="display1 text-muted">Aurélien</div>
+              <div class="display1 tracking-in-expand module">Chatelain</div>
+              <div class="display2 tracking-in-expand module" data-delay="1">
+                Aurélien
+              </div>
             </li>
           </ul>
 
-          <h3
-            class="display3 mt-20"
-            data-aos="fade-left"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="2500"
-          >
+          <h3 class="display3 mt-20 tracking-in-expand module" data-delay="2">
             Développeur FullStack
           </h3>
         </div>
       </div>
 
-      <div class="container mt-10" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container mt-10 text-focus-in module">
         <p class="text-leader description">
           Développeur d'applications web au sein du ministère de la défense
           depuis 2011, je suis fort d'une expérience dans le développement JEE.
@@ -79,13 +71,7 @@
         </p>
       </div>
 
-      <div
-        id="zone"
-        class="container mt-10"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="3000"
-      >
+      <div id="zone" class="container mt-10 module">
         <p class="display1">Zone de recherche principale :</p>
         <div class="text-center">
           <iframe
@@ -100,22 +86,8 @@
       </div>
 
       <div id="etudes" class="container mt-10">
-        <p class="display1" data-aos="fade-up-right">Etudes :</p>
-        <!--<div class="card" data-aos="fade-up">
-          <div class="card-header">
-            <div class="avatar">
-              <img src="./resources/img/logo-cnam.jpg" />
-            </div>
-            <div class="name">Conservatoire National des Arts et Métiers</div>
-            <div class="date">2017 - aujourd'hui</div>
-          </div>
-          <div class="card-content p-2">
-            Licence générale Sciences technologies santé mention informatique
-            générale, Informatique
-          </div>
-        </div>-->
-
-        <div class="card" data-aos="fade-right" data-aos-duration="1000">
+        <p class="display1 module">Etudes :</p>
+        <div class="card module">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-lgm.png" />
@@ -128,7 +100,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="card module">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-carnot.png" />
@@ -143,8 +115,8 @@
       </div>
 
       <div id="experiences" class="container mt-10">
-        <p class="display1" data-aos="fade-up-right">Expériences :</p>
-        <div class="card" data-aos="flip-left" data-aos-duration="1000">
+        <p class="display1">Expériences :</p>
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/MinistereDefense.jpg" />
@@ -182,7 +154,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-right" data-aos-duration="1000">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/MinistereDefense.jpg" />
@@ -203,8 +175,8 @@
       </div>
 
       <div id="formations" class="container mt-10">
-        <p class="display1" data-aos="fade-up-right">Formations :</p>
-        <div class="card" data-aos="flip-up">
+        <p class="display1">Formations :</p>
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/MinistereDefense.jpg" />
@@ -224,7 +196,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-down">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-orsys.jpg" />
@@ -245,7 +217,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-down">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-orsys.jpg" />
@@ -263,7 +235,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-up">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-orsys.jpg" />
@@ -283,7 +255,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-down">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-orsys.jpg" />
@@ -304,7 +276,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-up">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/logo-m2i.jpg" />
@@ -326,7 +298,7 @@
           </div>
         </div>
 
-        <div class="card" data-aos="flip-down">
+        <div class="card">
           <div class="card-header">
             <div class="avatar">
               <img src="./resources/img/MinistereDefense.jpg" />
@@ -348,13 +320,9 @@
       </div>
 
       <div id="competences" class="container mt-10">
-        <p class="display1" data-aos="fade-up-right">Compétences :</p>
+        <p class="display1">Compétences :</p>
         <div class="row">
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box langage fg-white">
               <div class="content">
                 <div class="p-2">
@@ -372,11 +340,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box langage fg-white">
               <div class="content">
                 <div class="p-2">
@@ -394,11 +358,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box langage fg-white">
               <div class="content">
                 <div class="p-2">
@@ -418,11 +378,7 @@
         </div>
 
         <div class="row">
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box langage fg-white">
               <div class="content">
                 <div class="p-2">
@@ -440,11 +396,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box langage fg-white">
               <div class="content">
                 <div class="p-2">
@@ -464,11 +416,7 @@
         </div>
 
         <div class="row">
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box bdd fg-black">
               <div class="content">
                 <div class="p-2">
@@ -486,11 +434,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box bdd fg-black">
               <div class="content">
                 <div class="p-2">
@@ -508,11 +452,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box bdd fg-black">
               <div class="content">
                 <div class="p-2">
@@ -532,11 +472,7 @@
         </div>
 
         <div class="row">
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box bdd fg-black">
               <div class="content">
                 <div class="p-2">
@@ -554,11 +490,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box bdd fg-black">
               <div class="content">
                 <div class="p-2">
@@ -578,11 +510,7 @@
         </div>
 
         <div class="row">
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box framework fg-black">
               <div class="content">
                 <div class="p-2">
@@ -600,11 +528,7 @@
             </div>
           </div>
 
-          <div
-            class="cell-md-4 mt-4"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <div class="cell-md-4 mt-4">
             <div class="icon-box framework fg-black">
               <div class="content">
                 <div class="p-2">
@@ -625,16 +549,16 @@
       </div>
 
       <div id="contact" class="container mt-10">
-        <p class="display1" data-aos="fade-up-right">Contacts :</p>
+        <p class="display1">Contacts :</p>
         <ul class="items-list">
-          <li class="item" data-aos="zoom-out-down">
+          <li class="item">
             <span class="avatar mif-mail"></span>
             <span class="label">Gmail</span>
             <a href="mailto:achatelain62000@gmail.com" class="second-label"
               >achatelain62000@gmail.com</a
             >
           </li>
-          <li class="item" data-aos="zoom-out-down">
+          <li class="item">
             <span class="avatar mif-linkedin"></span>
             <span class="label">linkedin</span>
             <a
@@ -644,7 +568,7 @@
               >aurélien chatelain</a
             >
           </li>
-          <li class="item" data-aos="zoom-out-down">
+          <li class="item">
             <span class="avatar mif-github"></span>
             <span class="label">GitHub</span>
             <a
@@ -654,7 +578,7 @@
               >sheldonGordon</a
             >
           </li>
-          <li class="item" data-aos="zoom-out-down">
+          <li class="item">
             <span class="avatar mif-mobile"></span>
             <span class="label">Mobile</span>
             <span class="second-label">06 27 23 70 74</span>
@@ -666,10 +590,6 @@
     <!-- Metro 4 -->
     <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
 
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="resources/js/scroll.js"></script>
   </body>
 </html>
