@@ -28,14 +28,6 @@ var win = $(window);
 
 var allMods = $(".module");
 
-allMods.each(function (i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-    el.attr("data-animation", false);
-  }
-});
-
 win.scroll(function (event) {
   allMods.each(function (i, el) {
     var el = $(el);
